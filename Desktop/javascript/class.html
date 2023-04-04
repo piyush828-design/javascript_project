@@ -1,0 +1,30 @@
+<html>
+<head>
+  <p id="demo">fd</p>
+  <script>
+    class car{
+      wheel(size,color){
+        this.size=size
+        this.color=color
+      }
+    }
+    var ob=new car()
+    ob.wheel(12,"red")
+    console.log(ob.size)
+    console.log(ob.color)
+
+    function student(name,sub,age){
+      this.n=name
+      this.s=sub
+      this.a=age
+    }
+    var ob1=new student("harish","science",12)
+    console.log(ob1.n)
+    document.getElementById("demo").innerHTML=
+      "this is"+ob1.n
+  </script>
+
+</head>
+  <body>
+  </body>
+</html>

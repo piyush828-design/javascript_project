@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>document</title>
+  <script language="javascript" type="text/javascript">
+    var element=document.title
+    console.log(element)
+
+    //var id=document.getElementById("header")
+    //console.log(id)
+
+
+    //console.log(id)
+
+  </script>
+</head>
+<body>
+  <div id="header" style="background-color:red;">
+    <p> this is header div</p>
+  </div>
+  <p id="demo" onclick="change()">click to change the content</p>
+  <script>
+    var id=document.getElementById("header")
+    id.style.color="yellow";
+
+    function change(){
+      document.getElementById("demo").innerHTML="text changed"
+    }
+  </script>
+  </body>
+</html>

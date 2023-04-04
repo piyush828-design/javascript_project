@@ -1,0 +1,108 @@
+<html>
+<head>
+  <style>
+    .student{
+      color: blue;
+      text-align: center ;
+    }
+    .hello{
+      text-align: right;
+      color: blue;
+    }
+    h1{
+      text-align: center;
+      font-style: italic;
+      font-variant: small-caps;
+      font-weight: bolder;
+      font-size:  50px;
+    }
+    p b{
+      color: rgb(255,90,0);
+    }
+    /* border div*/
+    div.bord{
+      border: 2px solid;
+      border-top-color: red;
+      border-bottom-color: green;
+      border-left-color: blue;
+      border-right-color: yellow;
+    }
+    /* Type-selector
+    h1{
+      color: red;
+    }*/
+    .button{
+      width: 10%;
+      height: 10%;
+    }
+    /*body{
+      background-image:  url("/home/rails/wings.jpeg");
+      background-color : #cccccc;
+
+    }*/
+    a:link {color: #000000}
+    a:visited {color: #006600}
+    a:hover {color: #FFCC00}
+    a:active {color: #FF00CC}
+  </style>
+  <script>
+
+    function trigger(){
+      var a=prompt("enter the color name")
+      document.body.style.background=a
+    }
+  </script>
+</head>
+  <body background-position:100px;>
+     <img style = "border:3px solid red; height:100px; width:100px;" src = "/home/rails/wings.jpeg" width="10" height="20" />
+      <img alt="damaged" style = "border:1px solid red; -moz-opacity:0.4; filter:alpha(opacity=40);" src = "/css/images/logo.png" />
+
+    <!-- ANCHOR TAG -->
+    <div class="hello">
+      <a href="" vlink="blue" link ="pink" alink="yellow">home</a>
+      <a href="">about</a>
+      <a href="">contact</a>
+    </div>
+
+    <!-- HEADING SHADOW-->
+    <h1 style = "text-shadow:4px 4px 8px yellow;">click to change the color</h1>
+
+    <!-- BUTTON -->
+    <center><button type="button" onclick="trigger()" class="button">click me</button></center>
+
+    <p style="color:red; font-style: italic; text-align:center;"> the text inside <b>p tag</b> the color is blue</p>
+
+    <!-- STUDENT CLASS DIV-->
+    <div class="student">
+      <p> Text inside the div tag and the class is student</p>
+    </div>
+
+    <!-- TEXT DECORATION -->
+    <p style= text-align:center;>inline css</p>
+    <p style=text-decoration:underline;>text decoration</p>
+    <p style=text-decoration:overline;>text decoration</p>
+    <p style=text-decoration:line-through;>text decoration</p>
+    <p style=text-transform:capitalize;>this will get captitalized</p>
+
+    <!--NESTED DIV -->
+
+    <div style="background-color:red;">
+      <p>this is div tag which has RED color</p>
+      <p>paragraph tag</p>
+      <div style="background-color:blue;">
+        <p>Nested div</p>
+        <div style="background-color:green;">
+          <p>nested div2</p>
+        </div>
+      </div>
+    </div>
+    <div style="background-color:green;">
+      <p>this is div tag</p>
+    </div>
+    <div class="bord">
+      <p>Text inside border</p>
+    </div>
+
+
+  </body>
+</html>

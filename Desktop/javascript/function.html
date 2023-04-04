@@ -1,0 +1,54 @@
+<html>
+<head>
+  <script language="javascript" type="text/javascript">
+
+    /*function hello(){
+      console.log("this is hello function")
+    }
+    function add(a,b){
+      console.log(a+b)
+    }
+    var cap=function(j,k){
+      return j+k
+    }
+    var cap1=cap(100,100)
+    console.log(cap1)
+    hello()
+    add(10,10)
+    add(20,20)
+    add(30,30)*/
+    function sub(a,b){
+      document.write(a-b)
+    }
+    function add(a,b){
+      document.write(a+b)
+    }
+    function mul(a,b){
+      document.write(a*b)
+    }
+    function div(a,b){
+      document.write(a/b)
+    }
+    function getval(){
+      var val=prompt("enter value 1")
+      var val2=prompt("enter value 2")
+      var x=parseInt(val)
+      var y=parseInt(val2)
+      var z=x%y
+      document.write(z)
+    }
+
+  </script>
+</head>
+<body bgcolor="black">
+  <font size="20" color="red"> function to perform basic calculations</font>
+  <form ><br/>
+    <input type="button" value="click to sub" name="subtraction" onclick="sub(1,2)">
+    <input type="button" value="click to add" onclick="add(2,1)"name="subtraction">
+    <input type="button" value="click to mul" onclick="mul(2,1)"name="subtraction">
+    <input type="button" value="click to div" onclick="div(2,1)"name="subtraction">
+    <input type="button" value="click to mod" onclick="getval()"name="modulus">
+  </form>
+
+</body>
+</html>

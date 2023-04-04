@@ -1,0 +1,25 @@
+<html>
+<head>
+   <script type = "text/javascript" language="javascript">
+      /*var key=prompt("enter the value for key")
+      var value=prompt("enter the value for value")
+
+      localStorage.setItem(key,value)
+      //localStorage.getItem('firstname')
+      console.log(`the value of key is ${key},and the value of value is,${value}`)
+      localStorage.getItem(key)
+
+      localStorage.clear()*/
+      let ob={
+         name:"Piyush",
+         class:"10th",
+         subject:"math"
+      }
+      localStorage.setItem("student",ob)
+      console.log(localStorage.getItem("student"))
+      localStorage.setItem("student", JSON.stringify(ob))
+      let storageProfileString = localStorage.getItem("student");
+      console.log("String saved in LocalStorage", storageProfileString);
+   </script>
+</head>
+</html>

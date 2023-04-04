@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+</style>
+</head>
+<body>
+<h1>Pass event objects from one function to another in JavaScript</h1>
+<button class="Btn" onclick="changeFont(event)">CLICK HERE</button>
+<h3>Click the above button to change its font size and color</h3>
+<script>
+
+   //var e=new Event();
+   function changeFont(e) {
+      debugger
+      e.target.style.fontSize = "32px"; //objectName.objectProperty = propertyValue;
+      changeColor(e);
+   }
+   function changeColor(e) {
+      debugger
+      e.target.style.color = "red";
+   }
+</script>
+</body>
+</html>
